@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <form action="#" id="form">
+    <h2>Транспортные средства и водители</h2>
+    <label for="carNumber">Гос-номер</label>
+    <input class="form__input" id="carNumber" type="text" placeholder="Укажите го-номер" required autocomplete="off">
+
+    <label for="carName">Транспортное средство</label>
+    <input class="form__input" id="carName" type="text" placeholder="Транспортное средство" required autocomplete="off">
+
+    <label for="dateOfPurchase">Ориентировочная дата прибытия к покупателю</label>
+    <input class="form__input" id="dateOfPurchase" type="date" required placeholder="Дата*">
+
+    <h3>Данные о водителе</h3>
+
+    <label for="driverName">ФИО</label>
+    <input class="form__input" id="driverName" type="text" placeholder="Укажите ФИО водителя" required
+      autocomplete="off">
+
+    <label for="passportSeries">Паспортные данные</label>
+    <div class="passports__data">
+      <div class="pasport__wrapper">
+        <input class="form__input" id="passportSeries" type="text" placeholder="Серия" required autocomplete="off">
+      </div>
+
+      <div class="pasport__wrapper">
+        <input class="form__input" id="passportNumber" type="text" placeholder="Номер" required autocomplete="off">
+      </div>
+    </div>
+    <label for="issuedBy">Кем выдан</label>
+    <input class="form__input" id="issuedBy" type="text" placeholder="Кем выдан" required autocomplete="off">
+
+    <label for="issueDate">Когда выдан</label>
+    <input class="form__input" id="issueDate" type="text" placeholder="Когда выдан" required autocomplete="off">
+
+    <ul class="btn__list">
+      <li class="btn__item">
+        <button type="submit" class="btn">Отправить</button>
+      </li>
+      <li class="btn__item">
+        <button type="button" class="btn btn__reset">Отменить</button>
+      </li>
+    </ul>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
